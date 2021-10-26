@@ -135,7 +135,7 @@
         <a-text value="Sartuday" negate="false" scale="1 1 1" position="-0.5 1.7 -5" color="yellow">
         </a-text>
 
-        <a-text value="9:00 ~ 19:00" negate="false" scale="1 1 1" position="-0.7 1.5 -5" color="orange">
+        <a-text value="9:30 ~ 19:00" negate="false" scale="1 1 1" position="-0.7 1.5 -5" color="orange">
         </a-text>
 
         <a-text value="Sunday" negate="false" scale="1 1 1" position="-0.5 1.1 -5" color="yellow">
@@ -188,13 +188,13 @@
     });
 
     take_savings_btn.addEventListener("click", function (e) {
-        let imageTrue = document.getElementsByTagName("a-image")[0];
+        //let imageTrue = document.getElementsByTagName("a-image")[0];
         audio.play();
-        imageTrue.setAttribute('visible', true);
-        choosePic();
-        sceneElement.classList.add("overlay");
-        e.preventDefault();
-        myobj.remove();
+        //imageTrue.setAttribute('visible', true);
+        //choosePic();
+        //sceneElement.classList.add("overlay");
+        //e.preventDefault();
+        //myobj.remove();
     });
 
     take_preview_btn.addEventListener("click", function (e) {
