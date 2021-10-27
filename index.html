@@ -20,6 +20,9 @@
     <script src="https://unpkg.com/aframe-chromakey-material/dist/aframe-chromakey-material.min.js"></script>
 
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
 </head>
 <style>
     .overlay {
@@ -111,9 +114,20 @@
             <audio id="soundtrack" src="Doo Bee Di Boy.mp3" preload="auto"></audio>
 
             <img id="my-image">
+            
+            
+              <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+  
         </a-assets>
+        
+        
+        
 
-
+ <a-entity text-geometry="value: What's up"></a-entity>
+    <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+        
+        
+        
 
         <a-image src="#my-image" id="aimage" position="0 0 -5" visible="false" height="0.9" width="1.2">
         </a-image>
